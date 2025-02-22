@@ -311,9 +311,11 @@ function RequestDetails() {
       </div>
       {downloadToggle && (
         <div className="fixed left-0 top-0 flex h-screen w-screen items-center justify-center bg-[#101828a4] backdrop-blur-[16px]">
-          <div className="h-[232px] w-[498px] rounded-xl bg-white p-6 pt-10">
+          <div className="h-[232px] w-[498px] rounded-xl bg-white p-6">
             <div className="flex flex-col gap-2">
-              <MdOutlineSpaceDashboard size="1.5rem" className="mb-4" />
+              <div className="mb-2 w-max rounded-lg border border-[#EAECF0] p-3">
+                <GrStatusGood size="1.5rem" color="#007129" />
+              </div>
               <div>
                 <p className="mb-1 text-[18px] font-medium text-[#101828]">
                   Successful
@@ -337,9 +339,11 @@ function RequestDetails() {
       )}
       {dispatchToggle && (
         <div className="fixed left-0 top-0 flex h-screen w-screen items-center justify-center bg-[#101828a4] backdrop-blur-[16px]">
-          <div className="h-[232px] w-[498px] rounded-xl bg-white p-6 pt-10">
+          <div className="h-[232px] w-[498px] rounded-xl bg-white p-6">
             <div className="flex flex-col gap-2">
-              <MdOutlineSpaceDashboard size="1.5rem" className="mb-4" />
+              <div className="mb-2 w-max rounded-lg border border-[#EAECF0] p-3">
+                <GrStatusGood size="1.5rem" color="#007129" />
+              </div>
               <div>
                 <p className="mb-1 text-[18px] font-medium text-[#101828]">
                   Successful

@@ -10,9 +10,10 @@ import { useContext, useState } from "react";
 import "react-multi-carousel/lib/styles.css";
 import { Link } from "react-router-dom";
 import { CiCreditCard1 } from "react-icons/ci";
-import { IoMdNotificationsOutline } from "react-icons/io";
+import { IoMdClose, IoMdNotificationsOutline } from "react-icons/io";
 import { PiUserCircleDuotone } from "react-icons/pi";
 import { FiPlus } from "react-icons/fi";
+import { FaRegPlusSquare } from "react-icons/fa";
 
 function CreateProfile() {
   const { minimize } = useContext(MinimizeContext);
@@ -237,8 +238,10 @@ function CreateProfile() {
         <div className="fixed left-0 top-0 flex h-screen w-screen items-center justify-center bg-[#101828a4] backdrop-blur-[16px]">
           <div className="w-[498px] rounded-xl bg-white">
             <div className="mb-3 flex items-center justify-between px-6 pt-6">
-              <div className="flex items-center gap-2">
-                <MdOutlineSpaceDashboard size="1.5rem" />
+              <div className="flex items-center gap-4">
+                <div className="rounded-lg border border-[#EAECF0] p-3">
+                  <FaRegPlusSquare size="1.5rem" />
+                </div>
                 <div>
                   <p className="text-[18px] font-bold text-[#101828]">
                     Add Fee
@@ -248,7 +251,7 @@ function CreateProfile() {
                   </p>
                 </div>
               </div>
-              <MdOutlineSpaceDashboard
+              <IoMdClose
                 size="1.5rem"
                 onClick={() => {
                   setToggle(false);
