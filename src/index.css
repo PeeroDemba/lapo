@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "DM Sans", sans-serif;
+  background-color: #f8fbff;
+}
+
+.recharts-default-legend {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
